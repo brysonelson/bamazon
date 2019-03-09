@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/brysonelson/bamazon#readme",
   "dependencies": {
+    "dotenv": "^6.2.0",
+    "if-env": "^1.0.4",
     "inquirer": "^6.2.0",
     "mysql": "^2.16.0"
   }

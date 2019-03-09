@@ -1,6 +1,7 @@
 //require inquirer and mysql
 var mysql = require("mysql");
 var inquirer = require("inquirer");
+require('dotenv').config()
 
 //connect to mysql database
 var connection = mysql.createConnection({
@@ -13,7 +14,7 @@ var connection = mysql.createConnection({
   user: "root",
 
   // Your password
-  password: "IHAZUnicorn",
+  password: process.env.SQL_PASS,
   database: "bamazon"
 });
 
